@@ -1,0 +1,9 @@
++ <root>
+  + company
+    - name: Acme Corp
+    + employees
+      + Alice
+        - role: Engineer
+      + Bob
+        - role: Sales
+    - founded: 1999

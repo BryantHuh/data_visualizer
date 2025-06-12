@@ -1,0 +1,11 @@
+<svg xmlns='http://www.w3.org/2000/svg'>
+<text x='10' y='20'>root</text>
+<text x='20' y='40'>company</text>
+<text x='30' y='60'>name: Acme Corp</text>
+<text x='30' y='80'>employees</text>
+<text x='40' y='100'>Alice</text>
+<text x='50' y='120'>role: Engineer</text>
+<text x='40' y='140'>Bob</text>
+<text x='50' y='160'>role: Sales</text>
+<text x='30' y='180'>founded: 1999</text>
+</svg>
