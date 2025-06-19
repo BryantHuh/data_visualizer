@@ -4,7 +4,7 @@ from typing import Any
 from Domain_Model.data import Data
 from Domain_Model.node import Node
 from Domain_Model.leaf import Leaf
-from View.observer import Observer
+from Contract.observer import Observer
 
 class DataTreeView(ttk.Frame, Observer):
     def __init__(self, master, model):

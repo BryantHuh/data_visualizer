@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from typing import Dict
-from View.observer import Observer
+from Contract.observer import Observer
 from Controller.data_controller import DataController
 
 class PluginListView(ttk.Frame, Observer):

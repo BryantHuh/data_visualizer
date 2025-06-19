@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from View.observer import Observer
+from Contract.observer import Observer
 
 class VisualizationView(ttk.Frame, Observer):
     def __init__(self, master):

@@ -1,5 +1,5 @@
 import tkinter as tk
-from View.observer import Observer
+from Contract.observer import Observer
 from Controller.data_controller import DataController
 from View.data_tree_view import DataTreeView
 from View.visualization_view import VisualizationView
