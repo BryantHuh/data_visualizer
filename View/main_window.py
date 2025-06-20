@@ -10,14 +10,25 @@ class MainWindow(tk.Tk, Observer):
         super().__init__()
         self.title('Data Visualizer')
         self.geometry('800x600')
+
+        button_frame = tk.Frame(self)
+        button_frame.pack(side='top', fill='x')
+
+        btn_json = tk.Button(button_frame, text='Open JSON', command=lambda: controller.onOpen('json'))
+        btn_json.pack(side='left', padx=5, pady=5)
+
+        btn_yaml = tk.Button(button_frame, text='Open YAML', command=lambda: controller.onOpen('yaml'))
+        btn_yaml.pack(side='left', padx=5, pady=5)
+
         self.controller = controller
 
-        menubar = tk.Menu(self)
-        filemenu = tk.Menu(menubar, tearoff=0)
-        filemenu.add_command(label='Open JSON', command=lambda: controller.onOpen('json'))
-        filemenu.add_command(label='Open YAML', command=lambda: controller.onOpen('yaml'))
-        menubar.add_cascade(label='File', menu=filemenu)
-        self.config(menu=menubar)
+        # Deaktiviert die Menüleiste, um macOS NSInternalInconsistencyException zu umgehen
+        # menubar = tk.Menu(self)
+        # filemenu = tk.Menu(menubar, tearoff=0)
+        # filemenu.add_command(label='Open JSON', command=lambda: controller.onOpen('json'))
+        # filemenu.add_command(label='Open YAML', command=lambda: controller.onOpen('yaml'))
+        # menubar.add_cascade(label='File', menu=filemenu)
+        # self.config(menu=menubar)
 
         left = tk.Frame(self)
         left.pack(side='left', fill='both', expand=True)
